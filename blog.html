@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Html</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- tailwind daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .font-lexend{
+            font-family: "Lexend", sans-serif;
+        }
+    </style>
+</head>
+<body class="font-lexend">
+    <nav class="sticky top-0">
+        <div class="flex justify-around items-center gap-2 bg-[#F9F7F3] pt-4 pb-12">
+            <div>
+                <a href="index.html">
+                    <button class="btn rounded-lg bg-[#B4F461] text-lg font-semibold">Home</button>
+                </a>
+            </div>
+            <div class="flex justify-center items-center gap-2">
+                <img src="./assets/logo.png" alt="">
+                <h2 class="text-lg font-semibold">Donate Bangladesh</h2>
+            </div>
+            <div class="flex justify-center items-center gap-2">
+                <img src="./assets/coin.png" alt="">
+                <h2 class="text-lg font-semibold">5500 BDT</h2>
+            </div>
+        </div>
+    </nav>
+    <!-- Accordion FAQ -->
+     <div class="ml-4">
+        <h2 class="text-2xl font-bold mt-8 mb-4">Important FAQ <i class="fa-solid fa-question"></i>
+        </h2>
+     </div>
+    <div class="mx-4">
+        <div class="collapse collapse-arrow bg-base-200 p-4">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                  <p>The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.</p>
+            </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                  <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+            </div>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                  <p>the onfocus event handler method is used to change the input element's style when the user clicks inside it.</p>
+            </div>
+    </div>
+
+</body>
+</html>
